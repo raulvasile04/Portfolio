@@ -1,0 +1,182 @@
+h1{
+    font-size: 80px !important;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: black !important;
+}
+
+#title {
+    background: linear-gradient(270deg, #FF5F00, #FF8C00, #FFC300 , #FFD400);
+    background-size: 600% 600%;
+
+    animation: gradientMove 8s ease infinite;
+}
+
+#title .container {
+    background: transparent !important;
+}
+
+.ocupation{
+    font-size: 30px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.text-container{
+    display: grid;
+    grid-template-rows: 0.5fr 1fr;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 50px;
+}
+
+.lead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left : 60px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-container{
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    grid-template-rows: 100px 200px 200px ;
+    grid-template-columns: 300px 300px 300px 300px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.skills-container > h2 {
+    display: flex;
+    justify-content: center;
+    grid-column: span 4;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.java{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.html{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.css{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.javascript{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bootstrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.postgresql{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.git{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.docker{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-container > h2{
+    font-size: 50px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-container{
+    gap: 20px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 100px 400px;
+    padding-left: 20px;
+    margin-bottom: 40px;
+}
+
+.project-container > h2{
+    grid-column: span 4;
+    justify-content: center;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 50px;
+}
+
+#footer{
+    background: linear-gradient(270deg, #FF5F00, #FF8C00, #FFC300 , #FFD400);
+    background-size: 600% 600%;
+
+    animation: gradientMove 8s ease infinite;
+}
+
