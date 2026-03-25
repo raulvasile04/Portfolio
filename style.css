@@ -180,3 +180,10 @@ h1{
     animation: gradientMove 8s ease infinite;
 }
 
+.btn{
+    background: linear-gradient(270deg, #FF5F00, #FF8C00, #FFC300 , #FFD400);
+    background-size: 600% 600%;
+
+    animation: gradientMove 8s ease infinite;
+}
+
