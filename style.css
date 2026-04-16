@@ -1,10 +1,25 @@
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 h1{
-    font-size: 80px !important;
+    font-size: clamp(32px, 6vw, 80px) !important;
     font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
     color: black !important;
+}
+
+.link-cv{
+    font-size: clamp(10px, 3vw, 25px) !important;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(0 0 0 / 0.84) !important;
 }
 
 #title {
@@ -19,7 +34,7 @@ h1{
 }
 
 .ocupation{
-    font-size: 30px;
+    font-size: clamp(14px, 2.2vw, 30px);
     font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -51,14 +66,14 @@ h1{
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    font-size: 50px;
+    font-size: clamp(22px, 3.5vw, 50px);
 }
 
 .lead{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left : 60px;
+    padding-left: clamp(12px, 4vw, 60px);
     font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -75,10 +90,10 @@ h1{
     display: grid;
     justify-content: center;
     width: 100%;
-    grid-template-rows: 100px 200px 200px ;
-    grid-template-columns: 300px 300px 300px 300px;
-    padding-left: 25px;
-    padding-right: 25px;
+    grid-template-rows: minmax(60px, 100px) minmax(120px, 200px) minmax(120px, 200px);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    padding-left: clamp(10px, 2vw, 25px);
+    padding-right: clamp(10px, 2vw, 25px);
 }
 
 .skills-container > h2 {
@@ -87,6 +102,12 @@ h1{
     grid-column: span 4;
     padding-top: 20px;
     margin-bottom: 20px;
+}
+
+.skills-container img {
+    height: clamp(50px, 10vw, 150px);
+    width: auto;
+    max-width: 100%;
 }
 
 .java{
@@ -138,7 +159,7 @@ h1{
 }
 
 .skills-container > h2{
-    font-size: 50px;
+    font-size: clamp(22px, 3.5vw, 50px);
     font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -146,31 +167,164 @@ h1{
 }
 
 #projects{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    width: 100%;
+    margin-top: clamp(40px, 6vw, 100px);
 }
 
-.project-container{
-    gap: 20px;
+.project-container-bookcommunity{
+    row-gap: clamp(14px, 2vw, 28px);
+    column-gap: clamp(24px, 5vw, 100px);
     display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: 400px 400px 400px;
-    grid-template-rows: 100px 400px;
-    padding-left: 20px;
-    margin-bottom: 40px;
+    justify-content: start;
+    align-items: start;
+    grid-template-columns: minmax(min(360px, 90vw), 620px) minmax(0, 1fr);
+    grid-template-rows: auto auto;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding-left: clamp(16px, 10vw, 250px);
+    padding-right: clamp(16px, 3vw, 40px);
+    margin-left: 0;
+    margin-bottom: clamp(24px, 3vw, 40px);
 }
 
-.project-container > h2{
-    grid-column: span 4;
-    justify-content: center;
-    text-align: center;
+.project-container-financeBuddy{
+    row-gap: clamp(14px, 2vw, 28px);
+    column-gap: clamp(24px, 5vw, 100px);
+    display: grid;
+    justify-content: start;
+    align-items: start;
+    grid-template-columns: minmax(min(360px, 90vw), 620px) minmax(0, 1fr);
+    grid-template-rows: auto auto;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding-left: clamp(16px, 10vw, 250px);
+    padding-right: clamp(16px, 3vw, 40px);
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+.project-container-gradingProgram {
+    row-gap: clamp(14px, 2vw, 28px);
+    column-gap: clamp(24px, 5vw, 100px);
+    display: grid;
+    justify-content: start;
+    align-items: start;
+    grid-template-columns: minmax(min(360px, 90vw), 620px) minmax(0, 1fr);
+    grid-template-rows: auto auto;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding-left: clamp(16px, 10vw, 250px);
+    padding-right: clamp(16px, 3vw, 40px);
+    margin-left: 0;
+    margin-bottom: clamp(24px, 3vw, 40px);
+}
+
+.carousel-slide-bookcommunity{
+    grid-column: 1;
+    grid-row: 2;
+    width: 100%;
+    max-width: 620px;
+    align-self: center;
+    margin-bottom: clamp(20px, 3vw, 50px);
+}
+
+.carousel-slide-financeBuddy{
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+    max-width: 620px;
+    align-self: center;
+    margin-bottom: clamp(20px, 3vw, 50px);
+}
+
+.carousel-slide-gradingProgram{
+    grid-column: 1;
+    grid-row: 2;
+    width: 100%;
+    max-width: 620px;
+    align-self: center;
+    margin-bottom: clamp(20px, 3vw, 50px);
+}
+
+.project-container-bookcommunity > h2{
+    grid-column: span 2;
+    grid-row: 1;
+    justify-content: flex-start;
+    text-align: start;
     font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    font-size: 50px;
+    font-size: clamp(22px, 3.5vw, 50px);
+    margin-right: clamp(0px, 20vw, 400px);
+}
+
+.bookco-carousel-text{
+    grid-column: 2;
+    grid-row: 2;
+    max-width: 760px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.gradingProgram-carousel-text{
+    grid-column: 2;
+    grid-row: 2;
+    max-width: 760px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.financeBuddy-carousel-text{
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+@media (max-width: 992px) {
+    .project-container-bookcommunity,
+    .project-container-financeBuddy,
+    .project-container-gradingProgram {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 20px;
+        padding: 20px 1rem 40px;
+        margin-left: 0;
+    }
+
+    .project-container-bookcommunity > h2,
+    .project-container-financeBuddy > h2,
+    .project-container-gradingProgram > h2 {
+        grid-column: 1;
+        margin-right: 0;
+    }
+
+    .carousel-slide-bookcommunity,
+    .carousel-slide-financeBuddy,
+    .carousel-slide-gradingProgram {
+        grid-column: 1;
+        grid-row: 2;
+        max-width: 100%;
+        margin-top: 12px;
+    }
+
+    .bookco-carousel-text,
+    .financeBuddy-carousel-text,
+    .gradingProgram-carousel-text {
+        grid-column: 1;
+        grid-row: 3;
+        max-width: 100%;
+    }
 }
 
 #footer{
@@ -186,4 +340,3 @@ h1{
 
     animation: gradientMove 8s ease infinite;
 }
-

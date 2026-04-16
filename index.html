@@ -37,6 +37,7 @@
                 <div class="container py-5">
                     <h1>Raul-Valentin Vasile</h1>
                     <p class = "ocupation">Software Engineering Student</p>
+                    <a href = "./Raul-Valentin_Vasile_Lebenslauf.pdf" download class = "link-cv">Download my CV</a>
                 </div>
             </div>
         </div>
@@ -86,42 +87,173 @@
     </section>
 
     <section id = "projects">
-       <div class = "project-container">
+       <div class = "project-container-bookcommunity">
            <h2>These are my projects</h2>
-           <div class = "html&css-project">
-               <div class="card" style="width: 400px;">
-                   <img src="./images/meme.png" class="card-img-top" alt="meme-website">
-                   <div class="card-body">
-                       <p class="card-text">This is a meme website made to exercise my skills with HTML & CSS.
-                       It is made of 3 files , the HTML file , the CSS file and a folder containing the meme picture .
-                       Click button to see on GitHub</p>
-                       <a href="https://github.com/raulvasile04/meme-website" class="btn">Click Me</a>
+           <div id="carouselExampleIndicators" class="carousel slide carousel-slide-bookcommunity">
+               <div class="carousel-indicators">
+                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+               </div>
+               <div class="carousel-inner">
+                   <div class="carousel-item active">
+                       <img src="./images/bookcommunity/bookco1.png" class="d-block w-100" alt="...">
+                   </div>
+                   <div class="carousel-item ">
+                       <img src="./images/bookcommunity/bookco2.png" class="d-block w-100" alt="...">
+                   </div>
+                   <div class="carousel-item">
+                       <img src="./images/bookcommunity/bookco3.png" class="d-block w-100" alt="...">
+                   </div>
+                   <div class="carousel-item">
+                       <img src="./images/bookcommunity/bookco4.png" class="d-block w-100" alt="...">
+                   </div>
+                   <div class="carousel-item">
+                       <img src="./images/bookcommunity/bookco5.png" class="d-block w-100" alt="...">
+                   </div>
+                   <div class="carousel-item">
+                       <img src="./images/bookcommunity/bookco6.png" class="d-block w-100" alt="...">
+                   </div>
+                   <div class="carousel-item">
+                       <img src="./images/bookcommunity/bookco7.png" class="d-block w-100" alt="...">
+                   </div>
+                   <div class="carousel-item ">
+                       <img src="./images/bookcommunity/bookco8.png" class="d-block w-100" alt="...">
                    </div>
                </div>
+               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                   <span class="visually-hidden">Previous</span>
+               </button>
+               <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                   <span class="visually-hidden">Next</span>
+               </button>
            </div>
-           <div class = "java-program">
-               <div class="card" style="width: 400px;">
-                   <img src="./images/grading-program.png" class="card-img-top" alt="">
-                   <div class="card-body">
-                       <p class="card-text">A java program that works through the console . It has integrated students ,
-                       and lets these find their associated grades and calculate their overall grade. Click button
-                       to see on GitHub</p>
-                       <a href="https://github.com/raulvasile04/GradingProgram" class="btn">Click Me</a>
-                   </div>
-               </div>
-           </div>
-           <div class = "portfolio-website">
-               <div class="card" style="width: 400px;">
-                   <img src="./images/first-portfolio.png" class="card-img-top" alt="portfolio-website">
-                   <div class="card-body">
-                       <p class="card-text">This was my first portfolio website , made by myself to revise my
-                       HTML and CSS knowledge . Made with the help with AI , it helped me revise my Web coding skills .
-                       Click button to see on GitHub</p>
-                       <a href="https://github.com/raulvasile04/my-portfolio" class="btn">Click Me</a>
-                   </div>
-               </div>
+           <div class = "bookco-carousel-text">
+               <h2>BookCommunity</h2>
+               <p>A desktop application built with Java and JavaFX that allows users to manage their personal book library,
+                   track reading progress, and analyze their reading habits.Built as a group project with two colleagues,
+                   this application was developed as part of our Developer Tools course. It was also presented at the annual
+                   SemCon meeting.</p>
+               <h3>Key features</h3>
+               <ul>
+                   <li>Add and manage a collection of books</li>
+                   <li>Track reading progress (pages read per month/year)</li>
+                   <li>View statistics such as most-read genres</li>
+                   <li>Simulated multi-user system with locally stored user profiles</li>
+                   <li>Interactive JavaFX UI with dynamic data updates</li>
+               </ul>
+               <h3>Tech-Stack</h3>
+               <ul>
+                   <li>Java</li>
+                   <li>JavaFX</li>
+               </ul>
+               <h3>My contribution</h3>
+               <p>Implemented the connection between the UI and application logic,
+                   ensuring that user interactions correctly trigger and update underlying data.</p>
            </div>
        </div>
+        <div class = "project-container-financeBuddy">
+            <div id="carouselExample" class="carousel slide carousel-slide-financeBuddy">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./images/financeBuddy/financeBuddy1.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="./images/financeBuddy/financeBuddy2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/financeBuddy/financeBuddy3.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class = "financeBuddy-carousel-text">
+                <h2>Finance Buddy</h2>
+                <p>A web-based personal finance tracker built using JavaScript, HTML, and CSS, fully designed and implemented by me.
+                    It allows users to manage income and expenses, track transactions by month, and monitor their financial balance.</p>
+                <h3>Key features</h3>
+                <ul>
+                    <li>Add and categorize transactions as income or expense</li>
+                    <li>Automatic grouping of transactions by month with dedicated cards</li>
+                    <li>Real-time income and expense calculations</li>
+                    <li>Persistent data storage using localStorage so data is saved between sessions</li>
+                    <li>Clean and responsive UI with horizontal scrolling for monthly transaction cards</li>
+                </ul>
+                <h3>Tech-Stack</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+                <h3><a href = "https://github.com/raulvasile04/finance-buddy">Link to GitHub</a></h3>
+            </div>
+        </div>
+        <div class = "project-container-gradingProgram">
+            <div id="carouselExample2" class="carousel slide carousel-slide-gradingProgram">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExample2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExample2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExample2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./images/gradingProgram/grading1.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="./images/gradingProgram/grading2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/gradingProgram/grading3.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class = "gradingProgram-carousel-text">
+                <h2>Grading Program (Java)</h2>
+                <p>A console-based Java application developed to practice object-oriented programming principles,
+                    including class design, data modeling, and interaction between multiple components.</p>
+                <h3>Key features</h3>
+                <ul>
+                    <li>Manage students and their grades across multiple courses</li>
+                    <li>Retrieve grades for specific subjects</li>
+                    <li>Calculate average grades per student</li>
+                    <li>Search functionality for finding students by name</li>
+                    <li>Structured using OOP concepts such as encapsulation and separation of concerns</li>
+                </ul>
+                <h3>Tech-Stack</h3>
+                <ul>
+                    <li>Java</li>
+                    <li>Collections Framework(List, Map</li>
+                </ul>
+                <h3><a href = "https://github.com/raulvasile04/GradingProgram">Link to GitHub</a></h3>
+            </div>
+        </div>
     </section>
 
     <section id = "footer">
