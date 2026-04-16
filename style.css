@@ -29,6 +29,29 @@ h1{
     animation: gradientMove 8s ease infinite;
 }
 
+.cv-download-button {
+    text-decoration: none;
+    background-color: transparent;
+    padding: 12px 28px;
+    border-radius: 6px;
+    border : 3px solid;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.link-cv{
+    text-decoration: none;
+}
+
+#about{
+    background: #ffffff;
+    width : 80%;
+    margin-left: clamp(16px, 10vw, 200px);
+    margin-top: 20px;
+}
+
 #title .container {
     background: transparent !important;
 }
@@ -90,10 +113,12 @@ h1{
     display: grid;
     justify-content: center;
     width: 100%;
-    grid-template-rows: minmax(60px, 100px) minmax(120px, 200px) minmax(120px, 200px);
+    grid-template-rows: minmax(60px, 100px) auto auto;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     padding-left: clamp(10px, 2vw, 25px);
     padding-right: clamp(10px, 2vw, 25px);
+    margin-top: 40px;
+    gap: 20px;
 }
 
 .skills-container > h2 {
@@ -114,48 +139,96 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #ffffff;
+    width: 70%;
+    aspect-ratio: 1;
+    margin: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.9);
+    border-radius: 10%;
 }
 
 .html{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #ffffff;
+    width: 70%;
+    aspect-ratio: 1;
+    margin: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.9);
+    border-radius: 10%;
 }
 
 .css{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #ffffff;
+    width: 70%;
+    aspect-ratio: 1;
+    margin: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.9);
+    border-radius: 10%;
 }
 
 .javascript{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #ffffff;
+    width: 70%;
+    aspect-ratio: 1;
+    margin: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.9);
+    border-radius: 10%;
 }
 
 .bootstrap{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #ffffff;
+    width: 70%;
+    aspect-ratio: 1;
+    margin: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.9);
+    border-radius: 10%;
 }
 
 .postgresql{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #ffffff;
+    width: 70%;
+    aspect-ratio: 1;
+    margin: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.9);
+    border-radius: 10%;
 }
 
 .git{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #ffffff;
+    width: 70%;
+    aspect-ratio: 1;
+    margin: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.9);
+    border-radius: 10%;
 }
 
 .docker{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #ffffff;
+    width: 70%;
+    aspect-ratio: 1;
+    margin: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.9);
+    border-radius: 10%;
 }
 
 .skills-container > h2{
@@ -228,7 +301,7 @@ h1{
     grid-row: 2;
     width: 100%;
     max-width: 620px;
-    align-self: center;
+    align-self: flex-start;
     margin-bottom: clamp(20px, 3vw, 50px);
 }
 
@@ -237,7 +310,7 @@ h1{
     grid-row: 1;
     width: 100%;
     max-width: 620px;
-    align-self: center;
+    align-self: flex-start;
     margin-bottom: clamp(20px, 3vw, 50px);
 }
 
@@ -246,7 +319,7 @@ h1{
     grid-row: 2;
     width: 100%;
     max-width: 620px;
-    align-self: center;
+    align-self: flex-start;
     margin-bottom: clamp(20px, 3vw, 50px);
 }
 
@@ -273,6 +346,11 @@ h1{
     font-style: normal;
 }
 
+.bookco-carousel-text > h3{
+    font-size: clamp(8px, 3.5vw, 18px);
+    color: #FF8C00;
+}
+
 .gradingProgram-carousel-text{
     grid-column: 2;
     grid-row: 2;
@@ -283,11 +361,21 @@ h1{
     font-style: normal;
 }
 
+.gradingProgram-carousel-text > h3{
+    font-size: clamp(8px, 3.5vw, 18px);
+    color: #FF8C00;
+}
+
 .financeBuddy-carousel-text{
     font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+}
+
+.financeBuddy-carousel-text > h3{
+    font-size: clamp(8px, 3.5vw, 18px);
+    color: #FF8C00;
 }
 
 
