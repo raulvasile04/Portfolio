@@ -1,13 +1,11 @@
 # Personal Portfolio Website
 
 ## Description
-This is my second personal portfolio website . It is a webpage made to display who i am , what i know and do , and some of my previous projects .
+This is my personal portfolio website, built to showcase my projects, technical skills, and experience as a software engineering student.
 
-## Content
-- Short "About Me" description
-- Information about my skills and technologies i know
-- Personal projects section
-- Contact section
+## 🌐 Live Demo
+
+(https://raulvasile04.github.io/Portfolio/)
 
 ## Tech Stack
 - HTML , CSS
