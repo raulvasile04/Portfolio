@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio</title>
     <link rel = "stylesheet" type = "text/css" href = "style.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -13,6 +14,7 @@
 </head>
 <body>
 
+    <div class="landing">
     <section id = "header">
         <header class="p-3 text-bg-dark" style="background-color : #212529 !important; ">
             <div class="container">
@@ -32,26 +34,53 @@
 
     <section id = "title" class="bg-custom">
         <div class=" container">
-            <div class=" container p-5 text-center bg-body-tertiary">
+            <div class=" container p-5 bg-body-tertiary">
                 <div class="container py-5">
+                    <div class="hero-glass">
                     <h1>Raul-Valentin Vasile</h1>
                     <p class = "ocupation">Software Engineering Student</p>
-                    <button class = "cv-download-button"><a href = "./Raul-Valentin_Vasile_Lebenslauf_Website.pdf" download class = "link-cv">Download my CV</a></button>
+                    </div>
+                    <div class="hero-glass">
+                    <p class = "hero-intro">Hi, I'm Raul-Valentin Vasile, a Software Engineering student at Heilbronn University of Applied Sciences with a strong interest in technology and solving real-world problems.</p>
+                    <p class = "hero-intro">Through university projects and my internship at Festool, I've gained practical experience in software development, low-code applications, technical research, and business process digitalization.</p>
+                    <p class = "hero-intro">I enjoy exploring new technologies, understanding complex challenges, and turning ideas into practical solutions. I'm always looking for opportunities to expand my knowledge, develop my skills, and gain new perspectives in the IT field.</p>
+                    </div>
                 </div>
             </div>
         </div>
+        <img src = "./images/raul-photo-sharp.png" class = "hero-photo" width = "500" height = "500" alt = "raul-photo">
     </section>
+    </div>
 
-    <section id = "about">
-        <div class="row featurette">
-            <div class=" text-container col-md-7">
-                <h2 class="heading">About Me</h2>
-                <p class="lead">Hi, my name is Raul-Valentin Vasile , i’m a software engineering student in my 4th semester at Heilbronn University with a growing interest in full-stack development, especially frontend.
-                    I enjoy building clean, user-friendly interfaces and turning ideas into real applications. As I’m still early in my journey, I’m continuously learning and improving through hands-on projects.
-                    I’m currently focused on strengthening my skills and gaining practical experience as a developer.</p>
+    <section>
+        <div class = "work-experience-container">
+            <h2>Work Experience</h2>
+            <div class = "job-header">
+                <h3>Software Engineering Internship @ </h3>
+                <img src = "./images/festool-gmbh-logo-vector.png" class = "job-logo" alt = "festool-logo">
+                <p class = "job-date">September 2026 - Present (Until March 2027)</p>
             </div>
-            <div class="col-md-5"><img src = "./images/raul-photo.png" class = "featurette-image img-fluid mx-auto" width = "500" height = "500" alt = "raul-photo">
+            <p>Contributing to internal digitalization initiatives through low-code application development, technical research, and requirements analysis, with an increasing focus on AI-assisted software development.</p>
+            <h4>Key Responsibilities &amp; Experience</h4>
+            <ul>
+                <li><strong>Low-Code Development:</strong> Maintaining and enhancing internal applications using Microsoft Power Apps and SharePoint, implementing new functionalities and improving existing workflows.</li>
+                <li><strong>Technology Research:</strong> Researching and evaluating programming languages, frameworks, and development tools for a potential internal development environment, with findings documented in Confluence.</li>
+                <li><strong>Version Control:</strong> Exploring GitLab and evaluating its use for future development projects.</li>
+                <li><strong>Requirements Analysis:</strong> Analyzing shop-floor processes and gathering information requirements to support the development of internal digital solutions.</li>
+                <li><strong>AI-Assisted Development:</strong> Transitioning toward the use of an internal AI-powered development platform for application creation and functional testing.</li>
+            </ul>
+            <div class = "job-header">
+                <h3>Sales Assistant @ </h3>
+                <img src = "./images/lidl.png" class ="job-logo-square" alt ="lidl-logo">
+                <p class = "job-date">December 20204 - April 2026</p>
             </div>
+            <p>Worked part-time at Lidl alongside my university studies, gaining practical experience in customer service, teamwork, and daily store operations.</p>
+            <h4>Key Responsibilities &amp; Experience</h4>
+            <ul>
+                <li><strong>Customer Service</strong>Assisted customers with inquiries and provided support during daily store operations.</li>
+                <li><strong>Store Operations</strong>Handled checkout responsibilities, restocked products, and maintained organized product displys</li>
+                <li><strong>Teamwork</strong>Collaborated with colleagues to ensure smooth operations in a busy retail environment</li>
+            </ul>
         </div>
     </section>
 
@@ -65,13 +94,13 @@
                 <img src = "./images/html.png" alt = "python" height="190">
             </div>
             <div class = "css">
-                <img src = "./images/css.png" alt = "css" height="150">
+                <img src = "./images/css-transparent.png" alt = "css" height="150">
             </div>
             <div class = "javascript">
                 <img src = "./images/javascript-logo.png" alt = "javascript" height="150">
             </div>
-            <div class = "bootstrap">
-                <img src = "./images/bootstrap-logo.png" alt = "bootstrap" height="150">
+            <div class = "power-apps">
+                <img src = "./images/power-apps.png" alt = "power apps" height="150">
             </div>
             <div class = "postgresql">
                 <img src = "./images/postgresql.png" alt = "postgresql" height="150">
@@ -81,6 +110,12 @@
             </div>
             <div class = "docker">
                 <img src = "./images/docker.png" alt = "docker" height="150">
+            </div>
+            <div class = "power-automate">
+                <img src = "./images/powerautomate.png" alt = "power automate" height="150">
+            </div>
+            <div class = "sharepoint">
+                <img src = "./images/sharepointonline.png" alt = "sharepoint" height="150">
             </div>
         </div>
     </section>
