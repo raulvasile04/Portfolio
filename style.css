@@ -669,11 +669,25 @@ h1{
     }
 }
 
+/* Same colours as the banner: light on the left, dark on the right */
 #footer{
-    background: linear-gradient(270deg, #FF5F00, #FF8C00, #FFC300 , #FFD400);
-    background-size: 600% 600%;
+    background: linear-gradient(270deg, #0B1C18 0%, #15362C 14%, #245445 26%, #34A887 47%, #E2EDE8 100%);
+}
 
-    animation: gradientMove 8s ease infinite;
+/* Dark text on the light side, light icons on the dark side */
+#footer span.text-body-secondary {
+    color: #212529 !important;
+}
+
+#footer a.text-body-secondary {
+    color: #E2EDE8 !important;
+}
+
+/* Copyright and icons stack here, so the gradient goes light (top) to dark (bottom) */
+@media (max-width: 767.98px) {
+    #footer{
+        background: linear-gradient(0deg, #0B1C18 0%, #15362C 17%, #245445 33%, #34A887 52%, #E2EDE8 100%);
+    }
 }
 
 .btn{
